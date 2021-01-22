@@ -9,6 +9,6 @@ var count int
 var mtx sync.Mutex
 
 //export Add
-func Add(a, b int) int { return a + b }
+func Add(a, b int) int { return a + b + 2 }
 
 func main() {}
