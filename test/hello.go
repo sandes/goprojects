@@ -5,10 +5,26 @@ import (
 	"sync"
 )
 
-var count int
+var count string
 var mtx sync.Mutex
 
-//export Add
-func Add(a, b int) int { return a + b + 2 }
+//export findLower
+func findLower(a []int) (response int) {
 
-func main() {}
+	var low int = a[0]
+
+	for _, v := range a {
+		if v < low {
+			low = v
+		}
+	}
+
+	return low
+
+}
+
+func main() {
+
+	//fmt.Println(Add())
+
+}

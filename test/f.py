@@ -4,4 +4,4 @@ import ctypes
 
 lib = ctypes.CDLL("./hello.so", mode=ctypes.RTLD_GLOBAL)
 
-print(lib.Add(2,1))
+print(lib.findLower([23,4,77,2,99]))

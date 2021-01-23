@@ -65,7 +65,7 @@ extern "C" {
 #endif
 
 
-extern GoInt findLower(GoSlice p0);
+extern GoString* Add();
 
 #ifdef __cplusplus
 }
